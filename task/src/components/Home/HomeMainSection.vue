@@ -22,14 +22,23 @@
             trendy, quality furniture
           </p>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" @click="scrollDown">
           <img src="@/assets/icons/Down.svg" alt="" />
         </div>
       </div>
     </div>
-    <div class="second-section">
+    <div class="second-section" ref="secondSection">
       <img src="../../assets/icons/Contact.svg" alt="" />
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    scrollDown() {
+      window.scrollBy({ top: 1000, behavior: 'smooth' });
+    }
+  }
+}
+</script>
