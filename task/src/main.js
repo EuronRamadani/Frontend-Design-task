@@ -5,6 +5,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../src/assets/styles/style.scss"
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);

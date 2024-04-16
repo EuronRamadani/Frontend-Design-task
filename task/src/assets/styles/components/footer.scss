@@ -1,0 +1,91 @@
+.container-footer {
+    background-color: #f3eee8;
+    padding-top: 50px;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: center;
+  
+    .main-title {
+      color: #534B42;
+      font-size: 34px;
+      font-weight: 700;
+      margin: 0 50px;
+      margin-left: 0px;
+    }
+  
+    .sections {
+      display: flex;
+  
+      .section {
+        margin: 0 70px;
+  
+        .section-title {
+          color: #534B42;
+          font-size: 25px;
+          font-weight: 600;
+        }
+  
+        .section-item {
+          color: #706458;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+  
+      .planet-respect {
+        margin: 0 70px;
+        .section-title {
+          color: #534B42;
+          font-size: 25px;
+          font-weight: 600;
+        }
+        .planet-description {
+          color: #706458;
+          font-size: 16px;
+          font-weight: 400;
+          width: 230px;
+        }
+  
+        .learn-more {
+          color: #A06056;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    img {
+      margin-left: 15px;
+    }
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11%;
+  
+    .footer-text {
+      color: #706458B2;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  
+    .footer-links {
+      display: flex;
+      margin-right: 50px;
+      
+      .footer-link {
+        color: #706458B2;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 12px;
+      }
+    }
+  }

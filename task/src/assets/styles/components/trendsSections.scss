@@ -1,0 +1,58 @@
+.trends-container {
+    display: flex;
+  }
+  
+  .content-section {
+    width: 100%;
+    padding: 10px 200px;
+  
+    .main-heading {
+      font-size: 35px;
+      font-weight: 400;
+      color: #121212;
+      margin-bottom: -10px;
+    }
+  
+    .sub-heading {
+      font-size: 18px;
+      font-weight: 400;
+      color: #706458e5;
+    }
+  
+    .find-more {
+      font-size: 18px;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+  
+  .subscribe-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem;
+  
+    .email-input {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      background-color: #F3EEE84D;
+      border: 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  
+    .subscribe-button {
+      padding: 8px 30px;
+      border: none;
+      background-color: #534B42;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      gap: 10px;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
