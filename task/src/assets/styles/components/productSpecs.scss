@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.6px solid #D9D9D9;
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .tab.active {
+    border-bottom: none;
+  }
+  
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e73c17;
+  }
+  
+  .content {
+    padding: 20px;
+    border: 0;
+  }
+  
+  .content-text {
+    padding: 0 20%;
+    color: #191919;
+    font-size: 18px;
+    font-weight: 300;
+  }
