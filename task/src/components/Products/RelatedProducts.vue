@@ -1,42 +1,51 @@
 <template>
- <div>
+  <div>
     <h1 class="titleRelated">Related Products</h1>
     <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="item in items" :key="item.id">
-        <div class="product-container">
-          <div :class="item.hasIcon ? 'label-container' : 'label-container2'">
-            <p
-              class="label-new"
-              :style="{ 'background-color': item.backgroundColor }"
-            >
-              {{ item.promo }}
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="item in items" :key="item.id">
+          <div class="product-container">
+            <div :class="item.hasIcon ? 'label-container' : 'label-container2'">
+              <p
+                class="label-new"
+                :style="{ 'background-color': item.backgroundColor }"
+              >
+                {{ item.promo }}
+              </p>
+              <p class="icon-heart" v-show="item.hasIcon">
+                <img src="../../assets/icons/heart.svg" alt="" />
+              </p>
+            </div>
+            <div class="product-image">
+              <img :src="item.imageUrl" :alt="item.title" />
+            </div>
+            <div class="add-to-cart">
+              <button>🛒 Add to cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-title">{{ item.title }}</p>
+            <p class="product-price">
+              <span class="current-price">{{ item.currentPrice }}</span>
+              <span v-if="item.hasSecondPrice" class="original-price">{{
+                item.originalPrice
+              }}</span>
             </p>
-            <p class="icon-heart" v-show="item.hasIcon">
-              <img src="../../assets/icons/heart.svg" alt="" />
-            </p>
           </div>
-          <div class="product-image">
-            <img :src="item.imageUrl" :alt="item.title" />
-          </div>
-          <div class="add-to-cart">
-            <button>🛒 Add to cart</button>
-          </div>
-        </div>
-        <div class="product-info">
-          <p class="product-title">{{ item.title }}</p>
-          <p class="product-price">
-            <span class="current-price">{{ item.currentPrice }}</span>
-            <span v-if="item.hasSecondPrice" class="original-price">{{
-              item.originalPrice
-            }}</span>
-          </p>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="custom-pagination">
+        <span
+          v-for="n in numberOfPages"
+          :key="n"
+          class="pagination-bullet"
+          :class="{ active: n === currentPage }"
+          @click="goToPage(n)"
+        ></span>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
- </div>
 </template>
 
 <script>
@@ -68,6 +77,8 @@ export default {
         { id: 2, name: "Test2" },
         { id: 3, name: "Test3" },
       ],
+      currentPage: 1,
+      numberOfPages: 4,
       items: [
         {
           id: 1,
@@ -86,7 +97,7 @@ export default {
           currentPrice: "$400.00",
           originalPrice: "$1000.66",
           hasSecondPrice: false,
-          imageUrl: require("../../assets/images/relatedProduct2.svg"),
+          imageUrl: require("../../assets/images/relatedProduct3.svg"),
           hasIcon: false,
           backgroundColor: "#E73C17",
           promo: "-10%",
@@ -154,5 +165,4 @@ export default {
 
 <style scoped>
 
-/* Ensure Swiper related styles are globally scoped or imported outside of this component */
 </style>

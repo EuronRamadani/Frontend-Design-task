@@ -1,0 +1,236 @@
+.header-main-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .title-3 {
+    font-size: 24px; /* Example size, adjust as needed */
+    color: #191919;
+  }
+  
+  .search-products-3 {
+    width: 950px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem;
+    border: 1px solid #f0f0f0;
+  
+    .input-container-3 {
+      display: flex;
+      align-items: center;
+      
+      .email-input-3 {
+        font-size: 20px;
+        color: #969696;
+        background-color: #ffffff;
+        font-weight: 300;
+        height: 76px;
+        padding-left: 30px;
+        border: 0;
+      }
+    }
+  
+    .search-button-3 {
+      background-color: #2f333a;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  
+    .category-selection-3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 30px;
+      border-left: 1px solid #F0F0F0;
+      margin-left: 5px;
+  
+      .login-signup-3 {
+        color: #191919;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+  
+  .cart-icon-3 {
+    position: relative;
+    .fa-regular, .fas {
+      width: 24px; // Set width here as needed
+    }
+  
+    .cart-badge-3 {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      padding: 2px 6px;
+      border-radius: 50%;
+      background-color: red;
+      color: white;
+      font-size: 0.75rem;
+    }
+  }
+  
+  .dropdown-3 {
+    position: relative;
+    font-size: 20px;
+    width: 200px; /* Adjust as needed */
+  
+    &::after {
+      content: "\25BC";
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+  
+  .dropdown-select-3 {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #191919;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    &:focus {
+      outline: none;
+      border-color: #191919;
+    }
+  }
+
+  .header-container-9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f333a;
+    padding: 0 40px;
+  }
+  
+  .header-title-9 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 50px;
+  }
+  
+  .language-currency-9 {
+    display: flex;
+  
+    .header-info-9 {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  
+    .icon-arrow-down-9 {
+      margin: 0 5px;
+    }
+  
+    .separator-9 {
+      margin: 0 15px;
+    }
+  }
+
+  .main-container-1 {
+    display: flex;
+    height: 76px;
+  }
+  
+  .category-container-1 {
+    background-color: #e73c17;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    padding: 0 70px;
+  
+    .category-text-1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  
+    .icon-1 {
+      width: 30px;
+    }
+  }
+  
+  .navigation-container-1 {
+    display: flex;
+    background-color: #2f333a;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+    .nav-item-1 {
+      display: flex;
+      margin: 20px;
+      justify-content: center;
+      align-items: center;
+  
+      .nav-text-1 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+  
+      .accent-1 {
+        color: rgb(231, 60, 23);
+      }
+  
+      .accent-icon-1 {
+        color: rgb(231, 60, 23);
+      }
+    }
+  }
+  
+  .contact-container-1 {
+    display: flex;
+    background-color: #2f333a;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #f0f0f0;
+    padding-left: 20px;
+    width: 40%;
+  
+    .contact-icon-1 {
+      width: 40px;
+      margin: 0 20px;
+    }
+  
+    .contact-info-1 {
+      color: #ffffff;
+  
+      .contact-text-1 {
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+  
+      .contact-number-1 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+      }
+    }
+  }

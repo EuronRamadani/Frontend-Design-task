@@ -1,5 +1,5 @@
 <template>
-  <div class="container-footer">
+  <div class="container-footer" data-aos="zoom-in" data-aos-duration="1500">
     <div class="header-section">
       <h1 class="main-title">antic</h1>
       <div class="sections">
@@ -74,7 +74,6 @@ export default {
           items: ["Our story", "Our stores", "Our partners"],
         },
       ],
-      
     };
   },
 };

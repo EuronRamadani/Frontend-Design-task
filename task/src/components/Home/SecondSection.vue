@@ -1,6 +1,9 @@
 <template>
-  <div class="container">
-    <div class="main-section">
+  <div class="container"
+  >
+    <div class="main-section"
+    data-aos="fade-left"
+    data-aos-duration="1500">
       <div class="text-content">
         <h1 class="main-heading">
           We stay by your <br> side to design <br> your projects
@@ -10,7 +13,8 @@
         </p>
       </div>
     </div>
-    <div class="services-container">
+    <div class="services-container" data-aos="fade-down" data-aos-duration="1500"
+>
       <div class="service" v-for="service in services" :key="service.title">
         <h2 class="service-title">{{ service.title }}</h2>
         <p class="service-description">{{ service.description }}</p>

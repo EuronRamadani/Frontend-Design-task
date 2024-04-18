@@ -1,5 +1,6 @@
 <template>
-  <div class="main-container">
+  <div class="main-container"
+  data-aos="fade-right">
     <div class="first-section">
       <div class="header-container">
         <h1 class="title">Antic</h1>
@@ -27,7 +28,8 @@
         </div>
       </div>
     </div>
-    <div class="second-section" ref="secondSection">
+    <div class="second-section" ref="secondSection"
+    data-aos="fade-right">
       <img src="../../assets/icons/Contact.svg" alt="" />
     </div>
   </div>
